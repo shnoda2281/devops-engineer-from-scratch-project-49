@@ -25,3 +25,7 @@ make install
 ## Демонстрация brain-calc
 
 [![asciinema](https://asciinema.org/a/0Vf2qY1W7zxEwBUWZHXh2OWIh.svg)](https://asciinema.org/a/0Vf2qY1W7zxEwBUWZHXh2OWIh)
+
+## Демонстрация brain-gcd
+
+[![asciinema](https://asciinema.org/a/PHArYci45q7rgNE2dHPfSTUm4.svg)](https://asciinema.org/a/PHArYci45q7rgNE2dHPfSTUm4)
