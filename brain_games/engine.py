@@ -1,16 +1,18 @@
-# brain_games/engine.py
-
-def run_game(game):
+def run(game) -> None:
+    """Generic game runner. Expects game to define:
+    - DESCRIPTION: str
+    - get_round() -> tuple[str, str]  # (question, correct_answer)
+    """
     print("Welcome to the Brain Games!")
     name = input("May I have your name? ")
     print(f"Hello, {name}!")
     print(game.DESCRIPTION)
 
-    rounds_count = 3
-    for _ in range(rounds_count):
-        question, correct_answer = game.get_question_and_answer()
+    rounds = 3
+    for _ in range(rounds):
+        question, correct_answer = game.get_round()
         print(f"Question: {question}")
-        answer = input("Your answer: ")
+        answer = input("Your answer: ").strip()
 
         if answer != correct_answer:
             print(
