@@ -33,3 +33,7 @@ make install
 ## Демонстрация brain-progression
 
 [![asciinema](https://asciinema.org/a/P0hR02K5J7gYUEMkAcA5UwOHM.svg)](https://asciinema.org/a/P0hR02K5J7gYUEMkAcA5UwOHM)
+
+## Демонстрация brain-progression
+
+[![asciinema](https://asciinema.org/a/OmTs5OJIRyu8BQU4xhw2WDKkC.svg)](https://asciinema.org/a/OmTs5OJIRyu8BQU4xhw2WDKkC)
