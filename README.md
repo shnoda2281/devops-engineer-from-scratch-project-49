@@ -29,3 +29,7 @@ make install
 ## Демонстрация brain-gcd
 
 [![asciinema](https://asciinema.org/a/PHArYci45q7rgNE2dHPfSTUm4.svg)](https://asciinema.org/a/PHArYci45q7rgNE2dHPfSTUm4)
+
+## Демонстрация brain-progression
+
+[![asciinema](https://asciinema.org/a/P0hR02K5J7gYUEMkAcA5UwOHM.svg)](https://asciinema.org/a/P0hR02K5J7gYUEMkAcA5UwOHM)
