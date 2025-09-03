@@ -15,5 +15,33 @@ build-backend = "hatchling.build"
 [tool.hatch.build.targets.wheel]
 packages = ["brain_games"]
 
+[dependency-groups]
+dev = [
+    "ruff>=0.12.11",
+]
+
 [project.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
+
+[tool.ruff]
+# подставь свою версию питона (py310/py311/py312)
+target-version = "py312"
+line-length = 88
+exclude = [
+  ".venv",
+  "dist",
+  "build",
+  "__pycache__",
+  ".pytest_cache",
+]
+
+[tool.ruff.lint]
+# Набор полезных правил: базовые ошибки, импорты (isort), апгрейды, баги, сложность
+select = ["E", "F", "I", "UP", "B", "C90"]
+# Если нужно приглушить что-то — раскомментируй
+# ignore = ["E203", "E501"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "lf"
