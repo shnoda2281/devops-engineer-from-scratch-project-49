@@ -18,6 +18,10 @@
 ```bash
 make install
 
-## Демонстрация
+## Демонстрация brain-even
 
 [![asciinema](https://asciinema.org/a/BT9Ze2Om7Jvz55V2OjgpObHpN.svg)](https://asciinema.org/a/BT9Ze2Om7Jvz55V2OjgpObHpN)
+
+## Демонстрация brain-calc
+
+[![asciinema](https://asciinema.org/a/0Vf2qY1W7zxEwBUWZHXh2OWIh.svg)](https://asciinema.org/a/0Vf2qY1W7zxEwBUWZHXh2OWIh)
