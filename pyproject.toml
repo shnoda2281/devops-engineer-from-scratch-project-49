@@ -1,12 +1,20 @@
 [project]
 name = "hexlet-code"
-version = "0.1.0"
-description = "Add your description here"
+version = "0.1.0"  # ↑ при изменениях повышай версию
+requires-python = ">=3.10"
+description = "Hexlet Brain Games"
 readme = "README.md"
-requires-python = ">=3.12"
 dependencies = [
     "prompt>=0.4.1",
 ]
+
+[project.scripts]
+brain-games       = "brain_games.scripts.brain_games:main"
+brain-even        = "brain_games.scripts.brain_even:main"
+brain-calc        = "brain_games.scripts.brain_calc:main"
+brain-gcd         = "brain_games.scripts.brain_gcd:main"
+brain-progression = "brain_games.scripts.brain_progression:main"
+brain-prime       = "brain_games.scripts.brain_prime:main"
 
 [build-system]
 requires = ["hatchling"]
@@ -15,33 +23,21 @@ build-backend = "hatchling.build"
 [tool.hatch.build.targets.wheel]
 packages = ["brain_games"]
 
-[dependency-groups]
-dev = [
-    "ruff>=0.12.11",
-]
-
-[project.scripts]
-brain-games = "brain_games.scripts.brain_games:main"
-
+# ruff (если ещё не добавлял)
 [tool.ruff]
-# подставь свою версию питона (py310/py311/py312)
-target-version = "py312"
+target-version = "py310"
 line-length = 88
-exclude = [
-  ".venv",
-  "dist",
-  "build",
-  "__pycache__",
-  ".pytest_cache",
-]
+exclude = [".venv", "dist", "build", "__pycache__", ".pytest_cache"]
 
 [tool.ruff.lint]
-# Набор полезных правил: базовые ошибки, импорты (isort), апгрейды, баги, сложность
 select = ["E", "F", "I", "UP", "B", "C90"]
-# Если нужно приглушить что-то — раскомментируй
-# ignore = ["E203", "E501"]
 
 [tool.ruff.format]
 quote-style = "double"
 indent-style = "space"
 line-ending = "lf"
+
+[dependency-groups]
+dev = [
+    "ruff>=0.12.11",
+]
