@@ -1,16 +1,18 @@
+ROUNDS_COUNT = 3  # количество раундов вынесено в константу
+
+
 def run(game) -> None:
     """Generic game runner. Expects game to define:
     - DESCRIPTION: str
-    - get_round() -> tuple[str, str]  # (question, correct_answer)
+    - get_question_and_answer() -> tuple[str, str]  # (question, correct_answer)
     """
     print("Welcome to the Brain Games!")
     name = input("May I have your name? ")
     print(f"Hello, {name}!")
     print(game.DESCRIPTION)
 
-    rounds = 3
-    for _ in range(rounds):
-        question, correct_answer = game.get_round()
+    for _ in range(ROUNDS_COUNT):
+        question, correct_answer = game.get_question_and_answer()
         print(f"Question: {question}")
         answer = input("Your answer: ").strip()
 
@@ -20,8 +22,7 @@ def run(game) -> None:
                 f"Correct answer was '{correct_answer}'."
             )
             print(f"Let's try again, {name}!")
-            return
-
+            break
         print("Correct!")
-
-    print(f"Congratulations, {name}!")
+    else:  # выполнится, если цикл прошёл без break
+        print(f"Congratulations, {name}!")

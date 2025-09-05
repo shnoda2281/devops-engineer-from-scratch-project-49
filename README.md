@@ -8,10 +8,10 @@
 
 ## Badges
 
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=shnoda2281_devops-engineer-from-scratch-project-49&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=shnoda2281_devops-engineer-from-scratch-project-49)
-[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=shnoda2281_devops-engineer-from-scratch-project-49&metric=bugs)](https://sonarcloud.io/summary/new_code?id=shnoda2281_devops-engineer-from-scratch-project-49)
-[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=shnoda2281_devops-engineer-from-scratch-project-49&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=shnoda2281_devops-engineer-from-scratch-project-49)
-[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=shnoda2281_devops-engineer-from-scratch-project-49&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=shnoda2281_devops-engineer-from-scratch-project-49)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=shnoda2281_devops-engineer-from-scratch-project-49&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=shnoda2281_devops-engineer-from-scratch-project-49)  
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=shnoda2281_devops-engineer-from-scratch-project-49&metric=bugs)](https://sonarcloud.io/summary/new_code?id=shnoda2281_devops-engineer-from-scratch-project-49)  
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=shnoda2281_devops-engineer-from-scratch-project-49&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=shnoda2281_devops-engineer-from-scratch-project-49)  
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=shnoda2281_devops-engineer-from-scratch-project-49&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=shnoda2281_devops-engineer-from-scratch-project-49)  
 
 ## Установка
 
@@ -34,6 +34,6 @@ make install
 
 [![asciinema](https://asciinema.org/a/P0hR02K5J7gYUEMkAcA5UwOHM.svg)](https://asciinema.org/a/P0hR02K5J7gYUEMkAcA5UwOHM)
 
-## Демонстрация brain-progression
+## Демонстрация brain-prime
 
 [![asciinema](https://asciinema.org/a/OmTs5OJIRyu8BQU4xhw2WDKkC.svg)](https://asciinema.org/a/OmTs5OJIRyu8BQU4xhw2WDKkC)
