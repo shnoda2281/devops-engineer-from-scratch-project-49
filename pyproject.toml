@@ -1,5 +1,5 @@
 [project]
-name = "devops-engineer-from-scratch-project-49"
+name = "hexlet-code"
 version = "0.1.8"
 description = "Hexlet Brain Games"
 readme = "README.md"
@@ -18,8 +18,8 @@ brain-progression = "brain_games.scripts.brain_progression:main"
 brain-prime = "brain_games.scripts.brain_prime:main"
 
 [tool.poetry]
-name = "devops-engineer-from-scratch-project-49"
-version = "0.1.0"
+name = "hexlet-code"
+version = "0.1.8"
 description = "Hexlet Brain Games"
 authors = ["Your Name <you@example.com>"]
 packages = [{ include = "brain_games" }]
