@@ -14,7 +14,6 @@ def run(game) -> None:
     print(f"Hello, {name}!")
     print(game.DESCRIPTION)
 
-    # Определяем, какую функцию вызова раунда использовать
     if hasattr(game, "get_question_and_answer"):
         get_q_and_a = game.get_question_and_answer
     elif hasattr(game, "get_round"):
@@ -30,11 +29,13 @@ def run(game) -> None:
         answer = input("Your answer: ").strip()
 
         if answer != str(correct_answer):
-            print(
-                f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'."
+            msg = (
+                f"'{answer}' is wrong answer ;(. "
+                f"Correct answer was '{correct_answer}'."
             )
+            print(msg)
             print(f"Let's try again, {name}!")
             break
         print("Correct!")
-    else:  # выполнится, если цикл прошёл без break
+    else:
         print(f"Congratulations, {name}!")
