@@ -1,19 +1,18 @@
-from random import choice, randint
 import operator
+import random
 
-DESCRIPTION = "What is the result of the expression?"
+DESCRIPTION = 'What is the result of the expression?'
 
-_OPERATIONS = [
+OPS = [
     ("+", operator.add),
     ("-", operator.sub),
     ("*", operator.mul),
 ]
 
-
-def get_round() -> tuple[str, str]:
-    a = randint(0, 20)
-    b = randint(0, 20)
-    op_sym, op_func = choice(_OPERATIONS)
-    result = op_func(a, b)
-    question = f"{a} {op_sym} {b}"  # важно: пробелы по бокам от оператора
-    return question, str(result)
+def get_question_and_answer() -> tuple[str, str]:
+    a = random.randrange(1, 21)
+    b = random.randrange(1, 21)
+    op_sym, op_fn = random.choice(OPS)
+    question = f"{a} {op_sym} {b}"
+    correct = str(op_fn(a, b))
+    return question, correct

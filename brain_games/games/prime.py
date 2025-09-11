@@ -1,11 +1,9 @@
 from math import isqrt
-from random import randint
+from random import randrange
 
 DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
-
 def is_prime(n: int) -> bool:
-    """Проверка простоты числа через перебор делителей до sqrt(n)."""
     if n < 2:
         return False
     if n % 2 == 0:
@@ -15,9 +13,7 @@ def is_prime(n: int) -> bool:
             return False
     return True
 
-
 def get_question_and_answer() -> tuple[str, str]:
-    """Генерация вопроса и правильного ответа для игры 'простое число'."""
-    number = randint(1, 200)
+    number = randrange(1, 201)
     correct = "yes" if is_prime(number) else "no"
     return str(number), correct

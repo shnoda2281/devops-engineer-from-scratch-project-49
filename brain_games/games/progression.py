@@ -1,26 +1,16 @@
-# brain_games/games/progression.py
-from random import choice, randint
+import random
 
-DESCRIPTION = "What number is missing in the progression?"
+DESCRIPTION = 'What number is missing in the progression?'
 
+PROG_LEN = 10
 
-def _build_progression(start: int, step: int, length: int) -> list[int]:
-    # a_i = start + i * step
-    return [start + i * step for i in range(length)]
+def get_question_and_answer() -> tuple[str, str]:
+    start = random.randrange(1, 11)      # вместо randint
+    step = random.randrange(2, 6)        # вместо randint
+    hidden_idx = random.randrange(PROG_LEN)
 
-
-def get_round() -> tuple[str, str]:
-    # Длина 5..10 (рекомендуем 10, но можно варьировать)
-    length = choice([10, 9, 8, 7, 6, 5])
-    start = randint(1, 20)
-    step = randint(1, 10)
-
-    prog = _build_progression(start, step, length)
-    hidden_idx = randint(0, length - 1)
-    correct = str(prog[hidden_idx])
-
-    shown = [str(x) for i, x in enumerate(prog)]
-    shown[hidden_idx] = ".."
-    question = " ".join(shown)
-
+    progression = [start + i * step for i in range(PROG_LEN)]
+    correct = str(progression[hidden_idx])
+    progression[hidden_idx] = ".."
+    question = " ".join(map(str, progression))
     return question, correct

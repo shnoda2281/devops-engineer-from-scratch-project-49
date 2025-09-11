@@ -1,13 +1,11 @@
-# brain_games/games/gcd.py
-from math import gcd
-from random import randint
+import math
+import random
 
-DESCRIPTION = "Find the greatest common divisor of given numbers."
+DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
-
-def get_round() -> tuple[str, str]:
-    a = randint(1, 100)
-    b = randint(1, 100)
+def get_question_and_answer() -> tuple[str, str]:
+    a = random.randrange(1, 101)
+    b = random.randrange(1, 101)
     question = f"{a} {b}"
-    answer = str(gcd(a, b))
-    return question, answer
+    correct = str(math.gcd(a, b))
+    return question, correct
