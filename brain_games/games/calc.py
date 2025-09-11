@@ -1,13 +1,14 @@
 import operator
 import random
 
-DESCRIPTION = 'What is the result of the expression?'
+DESCRIPTION = "What is the result of the expression?"
 
 OPS = [
     ("+", operator.add),
     ("-", operator.sub),
     ("*", operator.mul),
 ]
+
 
 def get_question_and_answer() -> tuple[str, str]:
     a = random.randrange(1, 21)

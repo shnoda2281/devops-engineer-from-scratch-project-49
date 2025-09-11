@@ -3,6 +3,7 @@ from random import randrange
 
 DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
+
 def is_prime(n: int) -> bool:
     if n < 2:
         return False
@@ -12,6 +13,7 @@ def is_prime(n: int) -> bool:
         if n % d == 0:
             return False
     return True
+
 
 def get_question_and_answer() -> tuple[str, str]:
     number = randrange(1, 201)

@@ -3,28 +3,17 @@ ROUNDS_COUNT = 3  # количество раундов вынесено в ко
 
 def run(game) -> None:
     """Generic game runner.
-    Игра должна определять:
+    Требуется у game:
       - DESCRIPTION: str
-      - get_question_and_answer() -> (question, correct_answer)  # новый стиль
-        ИЛИ
-      - get_round() -> (question, correct_answer)                # старый стиль
+      - get_question_and_answer() -> (question, correct_answer)
     """
     print("Welcome to the Brain Games!")
     name = input("May I have your name? ")
     print(f"Hello, {name}!")
     print(game.DESCRIPTION)
 
-    if hasattr(game, "get_question_and_answer"):
-        get_q_and_a = game.get_question_and_answer
-    elif hasattr(game, "get_round"):
-        get_q_and_a = game.get_round
-    else:
-        raise AttributeError(
-            "Game module must define get_question_and_answer() or get_round()."
-        )
-
     for _ in range(ROUNDS_COUNT):
-        question, correct_answer = get_q_and_a()
+        question, correct_answer = game.get_question_and_answer()
         print(f"Question: {question}")
         answer = input("Your answer: ").strip()
 
