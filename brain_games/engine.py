@@ -19,8 +19,7 @@ def run(game) -> None:
 
         if answer != str(correct_answer):
             msg = (
-                f"'{answer}' is wrong answer ;(. "
-                f"Correct answer was '{correct_answer}'."
+                f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'."
             )
             print(msg)
             print(f"Let's try again, {name}!")

@@ -1,6 +1,6 @@
 [project]
 name = "hexlet-code"
-version = "0.1.8"
+version = "0.1.9"
 description = "Hexlet Brain Games"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -20,10 +20,11 @@ brain-games = "brain_games.scripts.brain_games:main"
 
 [tool.poetry]
 name = "hexlet-code"
-version = "0.1.8"
+version = "0.1.9"
 description = "Hexlet Brain Games"
 authors = ["Your Name <you@example.com>"]
 packages = [{ include = "brain_games" }]
+include = ["bin/brain-games"]
 
 [tool.poetry.dependencies]
 python = "^3.10"

@@ -1,0 +1,2 @@
+# Никогда не исключать entrypoint из архивов/экспортов
+bin/brain-games export-ignore=false

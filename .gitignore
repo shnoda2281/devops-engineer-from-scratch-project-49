@@ -5,6 +5,6 @@ __pycache__/
 dist/
 __pycache__/
 *.pyc
-# keep Hexlet entry script
-!bin/
+# bin: храним только entrypoint для CI
+bin/*
 !bin/brain-games
